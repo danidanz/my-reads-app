@@ -16,30 +16,6 @@ async function loadBooks() {
   renderBooks(loadbooks.data, bookList);
 }
 
-// async function renderBooks() {
-//   const books = await fetchData<IBookResult>(API_URL);
-
-//   if (!books) {
-//     console.log("Aplikasi error!");
-//     return;
-//   }
-
-//   books.data.map((book) => {
-//     const newBook = document.createElement("div");
-//     const newBookTitle = document.createElement("h2");
-//     const newBookAuthor = document.createElement("h3");
-//     const newBookSummary = document.createElement("p");
-
-//     newBookTitle.textContent = book.title;
-//     newBookAuthor.textContent = book.author;
-//     newBookSummary.textContent = book.summary;
-
-//     newBook.append(newBookTitle, newBookAuthor, newBookSummary);
-
-//     document.body.append(newBook);
-//   });
-// }
-
 loadBooks();
 
 // Add a new book
